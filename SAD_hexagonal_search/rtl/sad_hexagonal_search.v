@@ -3,7 +3,7 @@ input clk,rst,go,		//go signal becomes high when all the data of the two frames 
 input[7:0]coordinate_values_currentframe0,coordinate_values_currentframe1,coordinate_values_currentframe2,coordinate_values_currentframe3,coordinate_values_currentframe4,coordinate_values_currentframe5,coordinate_values_currentframe6,	
 						//coordinate_values_currentframe is the register with the pixel data of 7 coordinates of current frame accessed from the external memory
 input [7:0]coordinate_values_referenceframe0,coordinate_values_referenceframe1,coordinate_values_referenceframe2,coordinate_values_referenceframe3,coordinate_values_referenceframe4,coordinate_values_referenceframe5,coordinate_values_referenceframe6,
-						//coordinate_values_reference frame is the register with the pixel data of 7 coordinates of reference frame accessed from the external 							memory
+						//coordinate_values_reference frame is the register with the pixel data of 7 coordinates of reference frame accessed from the external memory
 output reg [6:0] x_coordinates_currentframe0,output wire [6:0] x_coordinates_currentframe1,x_coordinates_currentframe2,x_coordinates_currentframe3,x_coordinates_currentframe4,x_coordinates_currentframe5,x_coordinates_currentframe6,
 						//x_coordinates_currentframe is register with x coordinates of 7 pixels including center of current frame for the hexagonal search
 output reg [6:0] y_coordinates_currentframe0,output wire [6:0] y_coordinates_currentframe1,y_coordinates_currentframe2,y_coordinates_currentframe3,y_coordinates_currentframe4,y_coordinates_currentframe5,y_coordinates_currentframe6,
