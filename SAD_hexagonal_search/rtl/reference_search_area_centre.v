@@ -1,6 +1,6 @@
 module reference_search_area_centre(input [5:0] counter, output [6:0] x_centre_reference, y_centre_reference);
-reg [6:0] x_centre[0:35];
-reg [6:0] y_centre[0:35];
+wire [6:0] x_centre[0:35];
+wire [6:0] y_centre[0:35];
 assign x_centre[0]=16;
 assign x_centre[1]=16;
 assign x_centre[2]=16;
