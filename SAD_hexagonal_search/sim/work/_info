@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/sim
+vabsolute
+Z1 !s110 1684815642
+!i10b 1
+!s100 _JW>X=[7128WmR]fB1d_b3
+!s11b QjlDKkVGF962@OMNFFRcD3
+IRR]?8N7@0IBRW5]R::fjT0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1684523569
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/absolute.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/absolute.v
+!i122 -1
+L0 1
+Z3 OL;L;2019.4;69
+r1
+!s85 0
+31
+Z4 !s108 1684815642.000000
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/absolute.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/absolute.v|
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vcla_8bit
+R1
+!i10b 1
+!s100 R2MFj>D]bo=<gEVGNQ2lJ1
+!s11b _GA<5I?m;oAYa`L]0Lk1f0
+I:1C@kXm;do57lJo:Q8iUR3
+R2
+R0
+w1684523594
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit.v
+!i122 -1
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit.v|
+!i113 1
+R5
+R6
+vcla_8bit_subtractor
+R1
+!i10b 1
+!s100 SaIDWz7_MJ8XQ[Ah`kh`A0
+!s11b G1NKdiIK6fP_lQXXzC6cJ0
+IeKQ`FGPD8WBi;g2WNFB4T3
+R2
+R0
+w1684523609
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit_subtractor.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit_subtractor.v
+!i122 -1
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit_subtractor.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit_subtractor.v|
+!i113 1
+R5
+R6
+vhexagon_coordinate_calculator
+R1
+!i10b 1
+!s100 bdZ4g7Qoe5Wh<_k4[SA^D2
+!s11b :IINZ7[<kmgVRJ:><^N]n3
+IN0lPCG9h;aeJQ:M5NeHd_2
+R2
+R0
+w1684683811
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/hexagon_coordinate_calculator.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/hexagon_coordinate_calculator.v
+!i122 -1
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/hexagon_coordinate_calculator.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/hexagon_coordinate_calculator.v|
+!i113 1
+R5
+R6
+vreference_search_area_centre
+R1
+!i10b 1
+!s100 [i]NH=`O_l[5S3<cT?iW82
+!s11b lSfz4bNV3h]57bM`;>K5l3
+IOjI@Nk5W0VnNiOz5:VISH1
+R2
+R0
+w1684674976
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/reference_search_area_centre.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/reference_search_area_centre.v
+!i122 -1
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/reference_search_area_centre.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/reference_search_area_centre.v|
+!i113 1
+R5
+R6
+vsad_calculation
+R1
+!i10b 1
+!s100 5faz2[EdTLmDGJiV9ODEN1
+!s11b N399ob`7;B[79<6VE@ZZ53
+I48LVl?76mkm^g6XL9Uh<M3
+R2
+R0
+w1684791286
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_calculation.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_calculation.v
+!i122 -1
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_calculation.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_calculation.v|
+!i113 1
+R5
+R6
+vsad_hexagonal_search
+R1
+!i10b 1
+!s100 k^OOjz]UhMm>LHjkNI7lP2
+!s11b ]2ed5cRHakb]9De5IMWdS2
+IGHQlzM3@7;d0=93`DZhkl2
+R2
+R0
+w1684797320
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_hexagonal_search.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_hexagonal_search.v
+!i122 -1
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_hexagonal_search.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_hexagonal_search.v|
+!i113 1
+R5
+R6
+vsad_hexagonal_search_tb
+!s110 1684815647
+!i10b 1
+!s100 XQQdiGj2=4^Blz:TW3PF:0
+!s11b XF;AXfGFW@KA>0HeOUkNf2
+IgeTi73SM@O3jTMo6k>]5U0
+R2
+R0
+w1684796538
+8/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/tb/sad_hexagonal_search_tb.v
+F/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/tb/sad_hexagonal_search_tb.v
+!i122 -1
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1684815647.000000
+!s107 /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/tb/sad_hexagonal_search_tb.v|
+!s90 -reportprogress|300|-work|work|/home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/tb/sad_hexagonal_search_tb.v|
+!i113 1
+R5
+R6

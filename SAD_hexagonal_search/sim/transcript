@@ -1,0 +1,130 @@
+# //  Questa Sim-64
+# //  Version 2019.4 linux_x86_64 Oct 15 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/absolute.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:42 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/absolute.v 
+# -- Compiling module absolute
+# 
+# Top level modules:
+# 	absolute
+# End time: 09:50:42 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:42 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit.v 
+# -- Compiling module cla_8bit
+# 
+# Top level modules:
+# 	cla_8bit
+# End time: 09:50:42 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit_subtractor.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:42 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/cla_8bit_subtractor.v 
+# -- Compiling module cla_8bit_subtractor
+# 
+# Top level modules:
+# 	cla_8bit_subtractor
+# End time: 09:50:42 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/hexagon_coordinate_calculator.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:42 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/hexagon_coordinate_calculator.v 
+# -- Compiling module hexagon_coordinate_calculator
+# 
+# Top level modules:
+# 	hexagon_coordinate_calculator
+# End time: 09:50:42 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/reference_search_area_centre.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:42 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/reference_search_area_centre.v 
+# -- Compiling module reference_search_area_centre
+# 
+# Top level modules:
+# 	reference_search_area_centre
+# End time: 09:50:42 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_calculation.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:42 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_calculation.v 
+# -- Compiling module sad_calculation
+# 
+# Top level modules:
+# 	sad_calculation
+# End time: 09:50:42 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_hexagonal_search.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:42 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/rtl/sad_hexagonal_search.v 
+# -- Compiling module sad_hexagonal_search
+# 
+# Top level modules:
+# 	sad_hexagonal_search
+# End time: 09:50:42 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/tb/sad_hexagonal_search_tb.v
+# QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+# Start time: 09:50:47 on May 23,2023
+# vlog -reportprogress 300 -work work /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/tb/sad_hexagonal_search_tb.v 
+# -- Compiling module sad_hexagonal_search_tb
+# ** Warning: /home/userdata/22mvd0107/SAD_module/SAD_hexagonal_search/tb/sad_hexagonal_search_tb.v(24): (vlog-2417) Multiple packed dimensions are not allowed.
+# 
+# Top level modules:
+# 	sad_hexagonal_search_tb
+# End time: 09:50:47 on May 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim sad_hexagonal_search
+# vsim sad_hexagonal_search 
+# Start time: 09:50:59 on May 23,2023
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.sad_hexagonal_search
+# Loading work.reference_search_area_centre
+# Loading work.hexagon_coordinate_calculator
+# Loading work.sad_calculation
+# Loading work.cla_8bit_subtractor
+# Loading work.absolute
+# Loading work.cla_8bit
+add wave -position insertpoint sim/:sad_hexagonal_search:*
+add wave -r :*
+quit -sim
+# End time: 09:51:48 on May 23,2023, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 1
+vsim sad_hexagonal_search_tb
+# vsim sad_hexagonal_search_tb 
+# Start time: 09:51:57 on May 23,2023
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.sad_hexagonal_search_tb
+# Loading work.sad_hexagonal_search
+# Loading work.reference_search_area_centre
+# Loading work.hexagon_coordinate_calculator
+# Loading work.sad_calculation
+# Loading work.cla_8bit_subtractor
+# Loading work.absolute
+# Loading work.cla_8bit
+add wave -position insertpoint sim/:sad_hexagonal_search_tb:*
+add wave -r :*
+run
+run
+run
+run
+run
