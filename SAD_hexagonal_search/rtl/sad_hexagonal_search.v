@@ -3,7 +3,7 @@ input clk,rst,go,		//go signal becomes high when all the data of the two frames 
 input[7:0]coordinate_values_currentframe0,coordinate_values_currentframe1,coordinate_values_currentframe2,coordinate_values_currentframe3,coordinate_values_currentframe4,coordinate_values_currentframe5,coordinate_values_currentframe6,	
 						//coordinate_values_currentframe is the register with the pixel data of 7 coordinates of current frame accessed from the external memory
 input [7:0]coordinate_values_referenceframe0,coordinate_values_referenceframe1,coordinate_values_referenceframe2,coordinate_values_referenceframe3,coordinate_values_referenceframe4,coordinate_values_referenceframe5,coordinate_values_referenceframe6,
-						//coordinate_values_reference frame is the register with the pixel data of 7 coordinates of reference frame accessed from the external memory
+						//coordinate_values_reference frame is the register with the pixel data of 7 coordinates of reference frame accessed from the external 							memory
 output reg [6:0] x_coordinates_currentframe0,output wire [6:0] x_coordinates_currentframe1,x_coordinates_currentframe2,x_coordinates_currentframe3,x_coordinates_currentframe4,x_coordinates_currentframe5,x_coordinates_currentframe6,
 						//x_coordinates_currentframe is register with x coordinates of 7 pixels including center of current frame for the hexagonal search
 output reg [6:0] y_coordinates_currentframe0,output wire [6:0] y_coordinates_currentframe1,y_coordinates_currentframe2,y_coordinates_currentframe3,y_coordinates_currentframe4,y_coordinates_currentframe5,y_coordinates_currentframe6,
@@ -24,7 +24,7 @@ reg [5:0] counter;				//counter used to check on which block in current frame FS
 wire [6:0] x_centre_reference,y_centre_reference;
 reg [7:0] cf_pixelvalue0,cf_pixelvalue1,cf_pixelvalue2,cf_pixelvalue3,cf_pixelvalue4,cf_pixelvalue5,cf_pixelvalue6,rf_pixelvalue0,rf_pixelvalue1,rf_pixelvalue2,rf_pixelvalue3,rf_pixelvalue4,rf_pixelvalue5,rf_pixelvalue6;
 wire flag_currentframe,flag_referenceframe;	//these flags check if the hexagonal coordinates calculated are within the boundry of frame or not
-reg i_clr,i_inc,j_clr,j_inc,k_clr,k_inc,counter_clr,counter_inc,sad_load,centre_initialization,current_centre_shift_row,current_centre_shift_column,reference_centre_shift;
+reg i_clr,i_inc,j_clr,j_inc,k_clr,k_inc,counter_clr,counter_inc,pixelvalue_load,centre_initialization,current_centre_shift_row,current_centre_shift_column,reference_centre_shift,block_result;
 wire [11:0] sad_min;
 wire [2:0] new_centre;
 parameter [3:0] s0=4'b0000;
@@ -73,11 +73,12 @@ begin
 	counter_clr=1'b0;
 	counter_inc=1'b0;
 	fetchpixeldata=1'b0;
-	sad_load=1'b0;
+	pixelvalue_load=1'b0;
 	centre_initialization=1'b0;
 	current_centre_shift_row=1'b0;
 	current_centre_shift_column=1'b0;
 	reference_centre_shift=1'b0;
+	block_result=1'b0;
 	case(p_state)
 	
 	s0: n_state=(go==1)?s1:s0;
@@ -135,16 +136,15 @@ begin
 	end
 
 	s8: begin
-	sad_value=sad_min;
 	k_inc=1'b1;
 	reference_centre_shift=1'b1;
 	n_state=s4;
 	end
 
 	s9: begin
+	block_result=1'b1;
 	k_clr=1'b1;
-	x_motion_coordinate=x_coordinates_referenceframe0;
-	y_motion_coordinate=y_coordinates_referenceframe0;
+	
 	n_state=s10;
 	end
 
@@ -152,7 +152,6 @@ begin
 	j_inc=1'b1;
 	counter_inc=1'b1;
 	current_centre_shift_column=1'b1;
-	//Add logic to shift the current centre to the next block for processing
 	n_state=s3;
 	end
 	
@@ -161,9 +160,10 @@ begin
 	j_clr=1'b1;
 	k_clr=1'b1;
 	current_centre_shift_row=1'b1;
-	//Add logic to shift the centre to the next row
 	n_state=s2;
 	end
+	
+	default: n_state=s0;
 	endcase
 end
 
@@ -292,12 +292,30 @@ begin
 	else if(current_centre_shift_row==1)
 	begin
 		x_coordinates_currentframe0<=x_coordinates_currentframe0+16;
-		y_coordinates_currentframe0<=y_coordinates_currentframe0;
+		y_coordinates_currentframe0<=8;
 	end
 	else
 	begin
 		x_coordinates_currentframe0<=x_coordinates_currentframe0;
 		y_coordinates_currentframe0<=y_coordinates_currentframe0;
+	end
+end
+
+//always block to store the final SAD value and the motion vector coordinates at the end of block processing
+always @(posedge clk)
+begin
+	if(block_result==1)
+	begin
+		sad_value<=sad_min;
+		x_motion_coordinate<=x_coordinates_referenceframe0;
+		y_motion_coordinate<=y_coordinates_referenceframe0;
+		
+	end
+	else
+	begin
+		sad_value<=sad_value;
+		x_motion_coordinate<=x_motion_coordinate;
+		y_motion_coordinate<=y_motion_coordinate;
 	end
 end
 
